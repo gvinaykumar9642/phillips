@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="5" parallel="tests">
+  <test  name="TestRunner-chrome">
+  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="scriptsContacts.TC_12_createcontact_assignedTo_Teamselling_Group"/>
+      <class name="scriptsContacts.TC_11_createcontact_assignedTo_Support_Group"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="TestRunner-Firefox">
+   <parameter name="browser" value="firefox"></parameter>
+    <classes>
+      <class name="scriptsContacts.TC_12_createcontact_assignedTo_Teamselling_Group"/>
+      <class name="scriptsContacts.TC_11_createcontact_assignedTo_Support_Group"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="TestRunner-chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="scriptsContacts.TC_11_createcontact_assignedTo_Support_Group">
+        <methods>
+          <include name="logOutApp"/>
+          <include name="launchBrowser"/>
+          <include name="logInApp"/>
+          <include name="closeBrowser"/>
+          <include name="createcontact_assignedTo_Support_Group"/>
+        </methods>
+      </class> <!-- scriptsContacts.TC_11_createcontact_assignedTo_Support_Group -->
+    </classes>
+  </test> <!-- TestRunner-chrome(failed) -->
+  <test thread-count="5" parallel="tests" name="TestRunner-Firefox(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="scriptsContacts.TC_11_createcontact_assignedTo_Support_Group">
+        <methods>
+          <include name="logOutApp"/>
+          <include name="launchBrowser"/>
+          <include name="logInApp"/>
+          <include name="closeBrowser"/>
+          <include name="createcontact_assignedTo_Support_Group"/>
+        </methods>
+      </class> <!-- scriptsContacts.TC_11_createcontact_assignedTo_Support_Group -->
+    </classes>
+  </test> <!-- TestRunner-Firefox(failed) -->
+</suite> <!-- Failed suite [Suite] -->
